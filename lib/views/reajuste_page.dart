@@ -19,8 +19,7 @@ class _ReajustePageState extends State<ReajustePage> {
   final sueldoCtrl = TextEditingController();
 
   void _calcular() {
-    final resultado =
-    controller.calcularReajuste(antiguedadCtrl.text, sueldoCtrl.text);
+    final resultado = controller.calcularReajuste(antiguedadCtrl.text, sueldoCtrl.text);
     Navigator.pushNamed(context, '/resultado', arguments: resultado);
   }
 
